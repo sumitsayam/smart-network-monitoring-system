@@ -146,13 +146,7 @@ npx -y firebase-tools@latest deploy --only hosting
 
 ---
 
-## 🎓 College Viva / Defense FAQ
 
-**Q1: Why did you use simulated telemetry instead of deep packet inspection (Wireshark/Npcap)?**
-> *Answer:* Deep packet inspection requires root/administrator privileges, platform-dependent drivers, and creates significant privacy/CPU overhead. In modern cloud and enterprise architectures, dashboards consume telemetry from APIs and NetFlow/SNMP agents. This MVP showcases the complete monitoring dashboard and anomaly detection layer cleanly and safely.
-
-**Q2: How does the anomaly alert detection work?**
-> *Answer:* The backend runs a rule-based evaluation loop. Whenever device download speeds exceed 70 Mbps, or network capacity exceeds 80%, or a device connection heartbeat drops, an alert object is constructed with timestamps and severity classifications (HIGH, MEDIUM, LOW).
 
 ---
 
